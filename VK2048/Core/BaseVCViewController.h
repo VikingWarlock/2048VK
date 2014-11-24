@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BaseVCViewController.h
 //  VK2048
 //
 //  Created by viking warlock on 11/23/14.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseVCViewController.h"
-@interface ViewController : BaseVCViewController
 
+@interface BaseVCViewController : UIViewController
 
 @end
-

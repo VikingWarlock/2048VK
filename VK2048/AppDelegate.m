@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+
+static AppDelegate *share;
+
 
 @interface AppDelegate ()
 
@@ -15,7 +19,19 @@
 @implementation AppDelegate
 
 
++(AppDelegate*)shared
+{
+    return share;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    share=self;
+    ViewController *vc=[[ViewController alloc]init];
+    self.BaseNavitgation=[[UINavigationController alloc]initWithRootViewController:vc];
+    self.BaseNavitgation.navigationBarHidden=YES;
+    self.window.rootViewController=self.BaseNavitgation;
     // Override point for customization after application launch.
     return YES;
 }
