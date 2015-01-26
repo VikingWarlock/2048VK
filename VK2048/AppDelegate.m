@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "StaticData.h"
 
 static AppDelegate *share;
 
@@ -28,6 +29,7 @@ static AppDelegate *share;
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     [self.window makeKeyAndVisible];
     share=self;
+    [StaticData setup];
     ViewController *vc=[[ViewController alloc]init];
     self.BaseNavitgation=[[UINavigationController alloc]initWithRootViewController:vc];
     self.BaseNavitgation.navigationBarHidden=YES;

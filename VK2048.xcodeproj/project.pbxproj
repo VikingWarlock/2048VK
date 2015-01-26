@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881A32561A75D3D60025BB96 /* StaticData.m in Sources */ = {isa = PBXBuildFile; fileRef = 881A32551A75D3D60025BB96 /* StaticData.m */; };
 		88ADCEBE1A21924F006CE6F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ADCEBD1A21924F006CE6F9 /* main.m */; };
 		88ADCEC11A21924F006CE6F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ADCEC01A21924F006CE6F9 /* AppDelegate.m */; };
 		88ADCEC41A21924F006CE6F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88ADCEC31A21924F006CE6F9 /* ViewController.m */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		881A32541A75D3D60025BB96 /* StaticData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StaticData.h; path = Core/StaticData.h; sourceTree = "<group>"; };
+		881A32551A75D3D60025BB96 /* StaticData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StaticData.m; path = Core/StaticData.m; sourceTree = "<group>"; };
+		881A32571A75D7720025BB96 /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
 		88ADCEB81A21924F006CE6F9 /* VK2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VK2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88ADCEBC1A21924F006CE6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88ADCEBD1A21924F006CE6F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				88ADCEBC1A21924F006CE6F9 /* Info.plist */,
 				88ADCEBD1A21924F006CE6F9 /* main.m */,
+				881A32571A75D7720025BB96 /* Constant.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,6 +136,8 @@
 			children = (
 				88ADCEE51A21D4BC006CE6F9 /* NumberCell.h */,
 				88ADCEE61A21D4BC006CE6F9 /* NumberCell.m */,
+				881A32541A75D3D60025BB96 /* StaticData.h */,
+				881A32551A75D3D60025BB96 /* StaticData.m */,
 			);
 			name = SmallElement;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 				TargetAttributes = {
 					88ADCEB71A21924F006CE6F9 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = WNV39R52R5;
 					};
 					88ADCED01A21924F006CE6F9 = {
 						CreatedOnToolsVersion = 6.1;
@@ -254,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				881A32561A75D3D60025BB96 /* StaticData.m in Sources */,
 				88ADCEE71A21D4BC006CE6F9 /* NumberCell.m in Sources */,
 				88ADCEEB1A21D69B006CE6F9 /* BaseVCViewController.m in Sources */,
 				88ADCEC41A21924F006CE6F9 /* ViewController.m in Sources */,
@@ -373,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VK2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -383,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = VK2048/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +453,7 @@
 				88ADCEDD1A21924F006CE6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88ADCEDE1A21924F006CE6F9 /* Build configuration list for PBXNativeTarget "VK2048Tests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +462,7 @@
 				88ADCEE01A21924F006CE6F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
